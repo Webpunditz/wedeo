@@ -111,10 +111,12 @@
 		$(body).css({'overflow':'hidden'});
 	};
 	
-	$('html').click(function(e) {   
+	$('html').click(function(e) {
 		if(!$(e.target).hasClass('showMenu')){
-			$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
-			$(body).css({'overflow':'scroll'});
+			if($('#cbp-spmenu-s1').hasClass('cbp-spmenu-open')){
+				$(body).css({'overflow':''});					
+				$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
+			}
 		}
 	});   
 	

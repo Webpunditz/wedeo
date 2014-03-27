@@ -37,6 +37,13 @@ $(document).ready(function(e) {
         });
         localStorage.setItem("categories", cat.slice( 1 ));
 	});
+	$('.cat').click(function(){
+		if(localStorage.getItem('categories') === null || localStorage.getItem('categories') === ''){
+			$('#skipContinue').html('Skip');
+		}else{
+			$('#skipContinue').html('Continue');
+		}
+	});
 	
 	// divide things
 	
