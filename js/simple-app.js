@@ -2,29 +2,7 @@ $(document).ready(function(){
 $(function(){
 
 	//Init Navigation
-	var nav = $('.swiper-nav').swiper({
-		slidesPerView: 'auto',
-		freeMode:true,
-		freeModeFluid:true,
-		onSlideClick: function(nav){
-			pages.swipeTo( nav.clickedSlideIndex )
-		}
-	})
-
-	//Function to Fix Pages Height
-	function fixPagesHeight() {
-		$('.swiper-pages').css({
-			height: $(window).height()-nav.height
-		})
-	}
-	$(window).on('resize',function(){
-		fixPagesHeight()
-	})
-	fixPagesHeight()
-
-	//Init Pages
-	var pages = $('.swiper-pages').swiper()
-
+	
 	//Scroll Containers
 	//$('.scroll-container').each(function(){
 //		$(this).swiper({
@@ -38,7 +16,7 @@ $(function(){
 //	})
 
 	//Gallery
-	var swiperGallery = $('.swiper-gallery').swiper({
+	/** var swiperGallery = $('.swiper-gallery').swiper({
 		mode: 'horizontal',
 		slidesPerView: 'auto',
 		freeMode: false,
@@ -57,6 +35,6 @@ $(function(){
       momentumRatio: 0,
       freeMode: true,
       freeModeFluid: true	
-	});	
+	});	**/
 });
 });

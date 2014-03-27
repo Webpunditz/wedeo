@@ -38,6 +38,8 @@ $(document).ready(function(e) {
         localStorage.setItem("categories", cat.slice( 1 ));
 	});
 	
+	// divide things
+	
 
 //============================== add category page functions ====================================
 
