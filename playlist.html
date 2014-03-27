@@ -85,6 +85,7 @@
     </div>
   </div>
 </nav>
+<div class="overlay"></div>
 <script type="text/javascript" src="js/jquery-1.11.0.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="phonegap.js"></script> 
@@ -96,7 +97,7 @@
 <script src="js/idangerous.swiper.scrollbar-2.0.js"></script> 
 <script src="js/simple-app.js"></script> 
 <script type="text/javascript">
- $(document).ready(function(e) {
+$(document).ready(function(e) {
 	
 	var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),				
 	showLeft = document.getElementById( 'showLeft' ),				
@@ -106,12 +107,14 @@
 		classie.toggle( this, 'active' );
 		classie.toggle( menuLeft, 'cbp-spmenu-open' );
 		$(body).css({'overflow':'hidden'});
+		$('.overlay').show();
 	};
 	
 	$('html').click(function(e) {
 		if(!$(e.target).hasClass('showMenu')){
 			if($('#cbp-spmenu-s1').hasClass('cbp-spmenu-open')){
-				$(body).css({'overflow':''});					
+				$(body).css({'overflow':''});	
+				$('.overlay').hide();				
 				$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
 			}
 		}
