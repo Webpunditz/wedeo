@@ -53,7 +53,7 @@ if(localStorage.getItem("categories") == null){
                         });
                     }).promise().done(function(){
                         initiated = 0;
-						$('.playlist ul li').addClass('slideLeft');
+						$('.playlist ul li').addClass('expandUp');
                     });
                 }
             }
