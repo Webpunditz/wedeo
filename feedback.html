@@ -12,13 +12,6 @@
 <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
 <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.scrollbar.css">
 <link rel="stylesheet" type="text/css" href="css/simple-app.css">
-<script>
-	setTimeout(function(){
-		if(!navigator.onLine){
-			location.href = 'offline.html';
-		}
-	},5000);
-</script>
 </head>
 
 <body>
@@ -101,7 +94,13 @@
 				$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
 			}
 		}
-	});   
+	});
+	
+	setTimeout(function(){
+		if(!navigator.onLine){
+			location.href = 'offline.html';
+		}
+	},5000);   
 	
 	
 });

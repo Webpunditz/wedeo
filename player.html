@@ -9,13 +9,6 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/slideleft.css">
 <link rel="stylesheet" type="text/css" href="css/component(slideleft).css">
-<script>
-	setTimeout(function(){
-		if(!navigator.onLine){
-			location.href = 'offline.html';
-		}
-	},5000);
-</script>
 </head>
 
 <body>
@@ -116,6 +109,12 @@
 			}
 		}); 
 	});
+	
+	setTimeout(function(){
+		if(!navigator.onLine){
+			location.href = 'offline.html';
+		}
+	},5000);
 </script>
 </body>
 </html>

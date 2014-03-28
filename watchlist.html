@@ -12,13 +12,7 @@
 <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
 <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.scrollbar.css">
 <link rel="stylesheet" type="text/css" href="css/simple-app.css">
-<script>
-	setTimeout(function(){
-		if(!navigator.onLine){
-			location.href = 'offline.html';
-		}
-	},5000);
-</script>
+<link rel="stylesheet" type="text/css" href="css/animations.css">
 </head>
 
 <body>
@@ -204,6 +198,15 @@
 		}
 	});   
 	
+	setTimeout(function(){
+		if(!navigator.onLine){
+			location.href = 'offline.html';
+		}
+	},5000);
+	
+	$(document).ready(function(){
+		$('.watchList ul li').addClass('fadeIn');	
+	});
 	
 });
 </script>
