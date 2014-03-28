@@ -15,7 +15,7 @@ if(localStorage.getItem("categories") == null){
             current_page = e.pages.current_page;
             next_page = e.pages.next_page;
             total_pages = e.pages.total_pages;
-        });		
+        });
 		$('#loading').hide();
 		
 		$('.playlist ul li img').click(function(){
@@ -26,7 +26,9 @@ if(localStorage.getItem("categories") == null){
 			var parago = $(this).attr('data-ago');
 			window.location = "player.html?v="+ paramV + "&id="+paramId +"&des="+ paramdes +"&title=" + paramtitle+"&ago="+parago ;	
 		});
-    });
+    }).done(function(){
+			$('.playlist ul li').addClass('slideUp');
+		});
 
 
 //============================== playlist infinite scroll page functions ====================================
@@ -51,6 +53,7 @@ if(localStorage.getItem("categories") == null){
                         });
                     }).promise().done(function(){
                         initiated = 0;
+						$('.playlist ul li').addClass('slideLeft');
                     });
                 }
             }
@@ -67,5 +70,6 @@ if(localStorage.getItem("categories") == null){
 			window.location = "player.html?v="+ paramV + "&id="+paramId +"&des="+ paramdes +"&title=" + paramtitle+"&ago="+parago ;	
 		});
     });
+	
 });
 	
