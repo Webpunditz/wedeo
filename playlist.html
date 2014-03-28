@@ -12,6 +12,13 @@
 <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
 <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.scrollbar.css">
 <link rel="stylesheet" type="text/css" href="css/simple-app.css">
+<script>
+	setTimeout(function(){
+		if(!navigator.onLine){
+			location.href = 'offline.html';
+		}
+	},5000);
+</script>
 </head>
 
 <body>
@@ -41,46 +48,25 @@
   <div class="swiper-container swiper1" style="height: 100vh;overflow-y: scroll;">
     <div class="swiper-wrapper">
       <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/1.png" alt=""><br/>Hightlights</div>
+        <div class="title1"><a href="#"><img src="images/featuresIcons/1.png" alt=""><br/>Hightlights</a></div>
       </div>
       <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/2.png" alt=""><br/>About</div>
+        <div class="title1"><a href=""><img src="images/featuresIcons/2.png" alt=""><br/>About</a></div>
       </div>
       <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/3.png" alt=""><br/>Sign In</div>
+        <div class="title1"><a href=""><img src="images/featuresIcons/3.png" alt=""><br/>Sign In</a></div>
       </div>
       <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/4.png" alt=""><br/>Watchlist</div>
+        <div class="title1"><a href="watchlist.html"><img src="images/featuresIcons/4.png" alt=""><br/>Watchlist</a></div>
       </div>
       <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/7.png" alt=""><br/>Rate Us</div>
+        <div class="title1"><a href=""><img src="images/featuresIcons/7.png" alt=""><br/>Rate Us</a></div>
       </div>
       <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/5.png" alt=""><br/>Favourites</div>
+        <div class="title1"><a href="favourites.html"><img src="images/featuresIcons/5.png" alt=""><br/>Favourites</a></div>
       </div>
       <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/6.png" alt=""><br/>Help</div>
-      </div>
-      <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/1.png" alt=""><br/>Hightlights</div>
-      </div>
-      <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/2.png" alt=""><br/>About</div>
-      </div>
-      <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/3.png" alt=""><br/>Sign In</div>
-      </div>
-      <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/4.png" alt=""><br/>Watchlist</div>
-      </div>
-      <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/7.png" alt=""><br/>Rate Us</div>
-      </div>
-      <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/5.png" alt=""><br/>Favourites</div>
-      </div>
-      <div class="swiper-slide one">
-        <div class="title1"><img src="images/featuresIcons/6.png" alt=""><br/>Help</div>
+        <div class="title1"><a href=""><img src="images/featuresIcons/6.png" alt=""><br/>Help</a></div>
       </div>
     </div>
   </div>
@@ -118,7 +104,7 @@ $(document).ready(function(e) {
 				$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
 			}
 		}
-	});   
+	});
 	
 	
 });
