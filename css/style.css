@@ -5,7 +5,7 @@
 }
 
 body {
-	background: url("../images/Setup_screen.jpg");
+	background: url("../images/Setup_screen.jpg") fixed;
 	background-size: cover;
 }
 

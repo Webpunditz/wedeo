@@ -88,6 +88,8 @@
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript">
 	$(function(){
+		alert(!!document.createElement('video').canPlayType);
+	
 		var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),				
 		showLeft = document.getElementById( 'showLeft' ),				
 		body = document.body;
@@ -109,12 +111,6 @@
 			}
 		}); 
 	});
-	
-	setTimeout(function(){
-		if(!navigator.onLine){
-			location.href = 'offline.html';
-		}
-	},5000);
 </script>
 </body>
 </html>
