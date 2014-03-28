@@ -154,22 +154,20 @@ body {
 
 .shake img {
 	-webkit-animation: bobble 2s infinite;
-	animation-direction: alternate;
 }
  @-webkit-keyframes bobble {
-	0%{
-		-webkit-transform:rotate(-15deg);
+	0% {
+	 -webkit-transform:rotate(-15deg);
 	}
-	50%{
-		-webkit-transform:rotate(15deg);
+	50% {
+	 -webkit-transform:rotate(15deg);
 	}
-	100%{
-		-webkit-transform:rotate(-15deg);
+	100% {
+	 -webkit-transform:rotate(-15deg);
 	}
 }
 
 /*========================== PLaylist Page ==========================*/
-
 
 #showLeft {
 	border: 0px;
@@ -303,6 +301,7 @@ body {
 /****************** Slide menu custom ********************/
 
 
+
 .cbp-spmenu p {
 	text-align: center;
 	cursor: pointer;
@@ -312,6 +311,7 @@ body {
 }
 
 /*========================== Wedeo-Player Page ==========================*/
+
 
 
 .demo {
@@ -404,7 +404,14 @@ body {
 	font-family: gotham;
 	color: #ec1e36;
 }
+
+.features img {
+	max-width: 15%;
+	height: auto;
+}
+
 /*========================== Sliding panel Page ==========================*/
+
 .nav li {
 	font-family: gotham;
 	font-size: 12px;
@@ -439,18 +446,79 @@ body {
 	height: auto !important;
 }
 
-.overlay { position:fixed; top:0px; left:0px; right:0px; bottom:0px; background:rgba(0,0,0,0.85); display:none;}
+.overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0,0,0,0.85);
+	display: none;
+}
 
 /*========================== Watchlist Page ==========================*/
-.watchList ul { float:left; position:relative; margin:0px; padding:0px; margin-bottom:15px;}
-.watchList ul li{ float:left; width:50%; list-style:none; display:inline; padding:2% 2% 2% 2%; position:relative;}
-.watchList ul li img { max-width:100%; height:auto;}
-.margin{ margin:90px 0 0 0 !important;}
-.watchListBand { background:rgba(8,7,9,0.85); position:absolute; bottom:0px; height:40px; left:4%; right:4%; bottom:3%; padding:2% 0 5% 0;}
-.watchlistTitle { padding:0px; float:left; padding:3% 0 0 5%;}
-.closebtn{ padding:0px; float:right;}
-.closebtn img { max-width:60% !important; height:auto;}
-.watchlistTitle p { color:#fff; font-size: 10px; font-family: gotham; margin:0px; float:left; padding-bottom:5%;}
+
+.watchList ul {
+	float: left;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 15px;
+}
+
+.watchList ul li {
+	float: left;
+	width: 50%;
+	list-style: none;
+	display: inline;
+	padding: 2% 2% 2% 2%;
+	position: relative;
+}
+
+.watchList ul li img {
+	max-width: 100%;
+	height: auto;
+}
+
+.margin {
+	margin: 90px 0 0 0 !important;
+}
+
+.watchListBand {
+	background: rgba(8,7,9,0.85);
+	position: absolute;
+	bottom: 0px;
+	height: 40px;
+	left: 4%;
+	right: 4%;
+	bottom: 3%;
+	padding: 2% 0 5% 0;
+}
+
+.watchlistTitle {
+	padding: 0px;
+	float: left;
+	padding: 3% 0 0 5%;
+}
+
+.closebtn {
+	padding: 0px;
+	float: right;
+}
+
+.closebtn img {
+	max-width: 60% !important;
+	height: auto;
+}
+
+.watchlistTitle p {
+	color: #fff;
+	font-size: 10px;
+	font-family: gotham;
+	margin: 0px;
+	float: left;
+	padding-bottom: 5%;
+}
 /*===========================================
 			Media Queries
 ============================================*/
@@ -458,6 +526,7 @@ body {
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
 /*============== index page =======================*/
+
 
 .row {
 	margin: 1em 0;
@@ -488,9 +557,11 @@ body {
 .col-lg-2 {
 	width: 18.666666666666664%;
 }
+
 .col-lg-8 {
-width: 66.66666666666666%;
+	width: 66.66666666666666%;
 }
+
 .col-lg-3 {
 	width: 34%;
 }
@@ -521,6 +592,7 @@ width: 66.66666666666666%;
 }
 
 /*=============== playlist page ======================*/
+
 
 #showLeft img {
 	width: 30px;
@@ -586,6 +658,7 @@ width: 66.66666666666666%;
 
 /*=================== Player page ======================*/
 
+
 .playercontrols {
 	padding: 3px 0;
 }
@@ -629,13 +702,31 @@ width: 66.66666666666666%;
 	font-size: 12px;
 }
 }
-@media (min-width:430px) and (max-width:480px){
-.watchListBand { background:rgba(8,7,9,0.85); position:absolute; bottom:0px; height:40px; left:4%; right:4%; bottom:3%; padding:2% 0 5% 0;}
-.watchlistTitle { padding:0px; float:left; padding:1% 0 0 5%;}
-.closebtn img { max-width:50% !important;}
+@media (min-width:430px) and (max-width:480px) {
+
+.watchListBand {
+	background: rgba(8,7,9,0.85);
+	position: absolute;
+	bottom: 0px;
+	height: 40px;
+	left: 4%;
+	right: 4%;
+	bottom: 3%;
+	padding: 2% 0 5% 0;
 }
 
-.title1 a{
+.watchlistTitle {
+	padding: 0px;
+	float: left;
+	padding: 1% 0 0 5%;
+}
+
+.closebtn img {
+	max-width: 50% !important;
+}
+}
+
+.title1 a {
 	padding: 0 !important;
 	text-decoration: none !important;
 	color: #ffffff !important;
