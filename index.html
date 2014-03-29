@@ -114,10 +114,10 @@
 	});
 	
 		setTimeout(function(){
-		if(!navigator.onLine){
-			location.href = 'offline.html';
-		}
-	},5000);
+			if(!window.navigator.onLine){
+				location.href = 'offline.html';
+			}
+		},5000);
 </script>
 </body>
 </html>
