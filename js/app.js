@@ -78,4 +78,21 @@ $('.add').click(function(){
 	$('.description h1').html(decodeURIComponent(GetParameterValues('title')));
 	$('.description span').html(decodeURIComponent(GetParameterValues('ago')));
 	$('.description p').html(decodeURIComponent(GetParameterValues('des')));
+	
+	if($('#youtube-player-container').length > 0){
+	jQuery("#youtube-player-container").tubeplayer({
+			width: 100 + '%', // the width of the player
+			height: 270 , // the height of the player
+			allowFullScreen: "false", // true by default, allow user to go full screen
+			initialVideo: GetParameterValues('v'), // the video that is loaded into the player
+			preferredQuality: "hd720",// preferred quality: default, small, medium, large, hd720
+			autoPlay: true,
+			onPlay: function(id){}, // after the play method is called
+			onPause: function(){}, // after the pause method is called
+			onStop: function(){}, // after the player is stopped
+			onSeek: function(time){}, // after the video has been seeked to a defined point
+			onMute: function(){}, // after the player is muted
+			onUnMute: function(){} // after the player is unmuted
+		});
+	}
 });
