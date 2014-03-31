@@ -84,6 +84,11 @@ $(function(){
 		classie.toggle( menuLeft, 'cbp-spmenu-open' );
 		$(body).css({'overflow':'hidden'});
 		$('.overlay').show();
+		document.body.addEventListener('touchmove', function(event) {
+     		 console.log(event.source);
+      			//if (event.source == document.body)
+       		 event.preventDefault();
+   		 }, false);
 	};
 	
 	$('html').click(function(e) {
@@ -92,6 +97,12 @@ $(function(){
 				$(body).css({'overflow':''});	
 				$('.overlay').hide();				
 				$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
+				document.body.addEventListener('touchmove', function(event) {
+					console.log(event.source);
+					//if (event.source == document.body)
+					//event.preventDefault();
+					return true;
+   				 }, false);
 			}
 		}
 	});
