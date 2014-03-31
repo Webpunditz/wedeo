@@ -29,7 +29,7 @@
   <!--/end of home page row -->
   
   <div class="row">
-    <div class="col-lg-12 playlist">
+    <div class="col-lg-12 playlist" id="scrollFix">
       <ul>
       </ul>
     </div>
@@ -84,7 +84,7 @@ $(function(){
 		classie.toggle( menuLeft, 'cbp-spmenu-open' );
 		$(body).css({'overflow':'hidden'});
 		$('.overlay').show();
-		document.body.addEventListener('touchmove', function(event) {
+		document.getElementById('scrollFix').addEventListener('touchmove', function(event) {
      		 console.log(event.source);
       			//if (event.source == document.body)
        		 event.preventDefault();
@@ -97,12 +97,6 @@ $(function(){
 				$(body).css({'overflow':''});	
 				$('.overlay').hide();				
 				$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
-				document.body.addEventListener('touchmove', function(event) {
-					console.log(event.source);
-					//if (event.source == document.body)
-					//event.preventDefault();
-					return true;
-   				 }, false);
 			}
 		}
 	});
