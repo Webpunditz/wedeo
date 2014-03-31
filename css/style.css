@@ -453,6 +453,7 @@ body {
 	bottom: 0px;
 	background: rgba(0,0,0,0.85);
 	display: none;
+	z-index:99;
 }
 
 /*========================== Watchlist Page ==========================*/
